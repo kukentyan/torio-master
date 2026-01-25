@@ -1,0 +1,49 @@
+{
+    "keybinds": {
+        "brightness": "g",
+        "zoom": "c",
+        "sprint": "p",
+        "autoclicker_left": "v",
+        "autoclicker_right": "x"
+    },
+    "feature_states": {
+        "brightness": true,
+        "zoom": true,
+        "sprint": true,
+        "coordinates": true,
+        "speed": true,
+        "reach": true,
+        "autoclicker": true,
+        "antiknockback": true,
+        "hitbox": true,
+        "streamprotect": false,
+        "nohurtcam": true,
+        "truesight": true,
+        "timechanger": false
+    },
+    "feature_settings": {
+        "speed": {
+            "speed": 1.0999999999999996
+        },
+        "reach": {
+            "reach": 3.1999999999999997
+        },
+        "autoclicker": {
+            "left_cps": 13.5,
+            "right_cps": 20.0,
+            "left_enabled": true,
+            "right_enabled": true
+        },
+        "hitbox": {
+            "hitbox": 1.25
+        },
+        "antiknockback": {
+            "xz": 0.9299999999999999,
+            "y": 0.9299999999999999
+        },
+        "timechanger": {
+            "time": 18000,
+            "preset": "Midnight"
+        }
+    }
+}
