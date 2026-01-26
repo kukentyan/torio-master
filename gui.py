@@ -1,4 +1,3 @@
-from email import header, message
 import customtkinter as ctk
 from PIL import Image
 import os
@@ -1630,4 +1629,5 @@ class MinecraftModApp(ctk.CTk):
         self.destroy()
 if __name__ == "__main__":
     app = MinecraftModApp()
+
     app.mainloop()
