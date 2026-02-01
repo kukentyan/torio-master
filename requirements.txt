@@ -1,6 +1,9 @@
 customtkinter==5.2.2
-keyboard==0.13.5
-Pillow==12.1.0
+pillow==12.1.0
 pygetwindow==0.0.9
-pymem==1.14.0
+psutil==7.2.2
+pywin32==311
+keyboard==0.13.5
 pynput==1.8.1
+pystray==0.19.5
+pymem==1.14.0
