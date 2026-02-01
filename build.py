@@ -26,6 +26,8 @@ class PydBuilder:
             "module/nohurtcam.py"
             "module/timechanger.py",
             "module/truesight.py"
+            "module/fastitem.py",
+            "module/systemtray.py"
         ]
 
     def clean(self):
@@ -224,4 +226,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         sys.exit(1)
     except Exception:
+
         sys.exit(1)
