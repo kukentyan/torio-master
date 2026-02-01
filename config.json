@@ -20,6 +20,8 @@
         "nohurtcam": true,
         "truesight": true,
         "timechanger": false
+        "fastitem": false,
+        "systemtray": true
     },
     "feature_settings": {
         "speed": {
@@ -46,4 +48,5 @@
             "preset": "Midnight"
         }
     }
+
 }
