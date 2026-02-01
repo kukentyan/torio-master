@@ -31,7 +31,8 @@ Official details: https://creativecommons.org/licenses/by-nc/4.0/
 - True Sight
 - Time Changer
 - Stream Protection
-- And more...
+- Fast Item
+- SystemTray
 
 ## Requirements
 - **Python 3.10+** (recommended: 3.11 or 3.12)
@@ -52,37 +53,12 @@ pip install -r requirements.txt
 ```
 (If you don't have requirements.txt yet, install these manually:)
 ```bash
-pip install customtkinter pillow pygetwindow pymem keyboard pynput
+pip install customtkinter pillow pygetwindow psutil pywin32 keyboard pynput pystray pymem
 ```
 ### 3. Build the Executable (.exe) with PyInstaller
 From the project root directory, run this command to create a single-file executable:
 ```bash
-pyinstaller --onefile --windowed --icon=icons/icon.ico --name=GhostClient 
---add-data "icons;icons" 
---add-data "config.json;." 
---hidden-import=customtkinter 
---hidden-import=PIL 
---hidden-import=pygetwindow 
---hidden-import=PIL._tkinter_finder 
---hidden-import=pymem 
---hidden-import=keyboard 
---hidden-import=pynput 
---hidden-import=pynput.keyboard 
---hidden-import=pynput.mouse 
---hidden-import=module.antiknockback 
---hidden-import=module.reach 
---hidden-import=module.hitbox 
---hidden-import=module.zoom 
---hidden-import=module.brightness 
---hidden-import=module.speed 
---hidden-import=module.coordinates 
---hidden-import=module.autoclicker 
---hidden-import=module.sprint 
---hidden-import=module.nohurtcam 
---hidden-import=module.truesight 
---hidden-import=module.timechanger 
---hidden-import=module.streamprotect
-main.py
+pyinstaller --onefile --windowed --icon=icons/icon.ico --name=GhostClient --add-data "icons;icons" --add-data "config.json;."  --add-data "module/*.pyd;module" --add-data "icons/icon.png;icons" --hidden-import=customtkinter --hidden-import=pystray --hidden-import=pystray.menu --hidden-import=pystray._base --hidden-import=pystray._win32 --hidden-import=pystray._util --hidden-import=pystray._util.win32 --hidden-import=pywin32 --hidden-import=win32api --hidden-import=win32api --hidden-import=pywintypes --hidden-import=win32ctypes --hidden-import=win32gui --hidden-import=win32process --hidden-import=tkinter.messagebox --hidden-import=PIL --hidden-import=pygetwindow --hidden-import=PIL._tkinter_finder --hidden-import=pymem --hidden-import=keyboard --hidden-import=pynput --hidden-import=pynput.keyboard --hidden-import=pynput.mouse --hidden-import=tkinter --hidden-import=turtle --hidden-import=module.antiknockback --hidden-import=module.reach --hidden-import=module.hitbox --hidden-import=module.zoom --hidden-import=module.brightness --hidden-import=module.speed --hidden-import=module.coordinates --hidden-import=module.autoclicker --hidden-import=module.sprint --hidden-import=module.nohurtcam --hidden-import=module.truesight --hidden-import=module.timechanger --hidden-import=module.streamprotect --hidden-import=module.fastitem --hidden-import=module.systemtray main.py
 ```
 **Notes:**
 After building, the standalone executable will be in the dist/ folder:
